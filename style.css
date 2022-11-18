@@ -289,6 +289,15 @@ body {
   font-size: 12px;
 }
 
+.reference a {
+  color: rgb(98, 160, 241);
+}
+
+.main .reference {
+  font-size: 11px;
+  color: salmon;
+}
+
 /* clearfix*/
 
 /**

@@ -166,10 +166,11 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 90%;
   margin: 80px auto;
   background-color: #fff;
   position: relative;
+  max-width: 850px;
 }
 
 .instagram {
@@ -183,6 +184,8 @@ body {
   position: absolute;
   top: -23px;
   right: -28px;
+  /* align-items: end; */
+  /* width: -webkit-fill-available; */
 }
 
 .header {
@@ -212,10 +215,10 @@ body {
 }
 
 .hero {
-  height: 320px;
+  height: 250px;
   background-image: url(img/hero.jpg);
   background-size: cover;
-  background-position: 0 -260px;
+  /* background-position: 0 -260px; */
   border-top: 5px solid rgba(144, 177, 248, 0.651);
   border-bottom: 5px solid rgba(21, 234, 245, 0.582);
   background-attachment: fixed;
@@ -224,10 +227,7 @@ body {
 /* main */
 
 .main {
-  width: 600px;
   padding: 20px;
-  box-sizing: border-box;
-  float: left;
 }
 
 .main h2 {
@@ -253,8 +253,8 @@ body {
 
 /*sidebar*/
 .sidebar {
-  width: 300px;
-  float: right;
+  /* width: 300px; */
+  /* float: right; */
   padding: 20px;
   text-align: justify;
 }
@@ -297,7 +297,7 @@ body {
 
 .cf:before,
 .cf:after {
-  content: " "; /* 1 */
+  /* content: " "; */ /* 1 */
   display: table; /*2 */
 }
 
@@ -305,34 +305,15 @@ body {
   clear: both;
 }
 
-@media (max-width: 464px) {
-  .main {
-    width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    float: none;
-  }
-
-  /*sidebar*/
-  .sidebar {
-    width: 600px;
-    float: none;
-    margin: 50px;
-    padding: 20px;
-    text-align: justify;
-  }
+@media (max-width: 425px) {
 
   .sidebar img {
-    width: 70px;
-    height: 70px;
+    width: 35px;
+    height: 35px;
     float: left;
     padding-right: 10px;
   }
-  .main {
-    width: 90%;
-    padding: none;
-    margin: auto;
-    box-sizing: border-box;
-    float: none;
-  }
+  .content.cf {
+    display: block;
+}
 }

@@ -86,20 +86,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 body {
   line-height: 1;
 }
@@ -303,6 +289,11 @@ body {
 
 .cf:after {
   clear: both;
+}
+
+.content.cf {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 @media (max-width: 425px) {

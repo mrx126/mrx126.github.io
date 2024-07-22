@@ -134,9 +134,11 @@ table {
 /*style*/
 body {
   font: 16px/28px arial, sans-serif;
-  background-color: #eaeaea;
-  background-image: url(img/stripes-light.png);
+  background-image: url(https://wallpapercave.com/wp/wp5502807.jpg);
   color: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .top-bar {
@@ -170,8 +172,7 @@ body {
   position: absolute;
   top: -23px;
   right: -28px;
-  /* align-items: end; */
-  /* width: -webkit-fill-available; */
+  z-index: 999;
 }
 
 .header {
@@ -202,12 +203,16 @@ body {
 
 .hero {
   height: 250px;
-  background-image: url(img/hero.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp5502807.jpg);
   background-size: cover;
   /* background-position: 0 -260px; */
   border-top: 5px solid rgba(144, 177, 248, 0.651);
   border-bottom: 5px solid rgba(21, 234, 245, 0.582);
   background-attachment: fixed;
+  background-color: white;
+  opacity: 0.5;
+  /* z-index: -999; */
+  /* position: relative; */
 }
 
 /* main */
